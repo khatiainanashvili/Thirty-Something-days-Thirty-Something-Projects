@@ -1,5 +1,10 @@
 # Thirty-Something-days-Thirty-Something-Projects
+Evolution in Web Development: My Journey with HTML, CSS, and JavaScript
+Greetings, fellow coders! Join me on a transformative journey of mastering HTML, CSS, and JavaScript. These projects symbolize my progression from fundamental concepts to more intricate implementations. Let's explore the evolution:
 
+Foundational Adventures
+The early projects like "animated-scroll" and "background-Boxes" laid the groundwork, introducing me to the magical trio of HTML, CSS, and JavaScript. These were my first steps into the world of web development.
+Explore the projects:
 1. **Project: "animated-scroll"**
    - This simple JavaScript project adds a "show" class to HTML elements with the class "box" when they become visible in the viewport while scrolling.
    - Live link: [animated-scroll](https://khatiainanashvili.github.io/Thirty-Something-days-Thirty-Something-Projects/animated-scroll/)
