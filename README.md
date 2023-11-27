@@ -1,6 +1,6 @@
 # Thirty-Something-days-Thirty-Something-Projects
-    project1 "animated-scroll" 
-              This simple JavaScript project adds a "show" class to HTML elements with the class "box" when they become visible in the viewport while scrolling
+project1 "animated-scroll" 
+This simple JavaScript project adds a "show" class to HTML elements with the class "box" when they become visible in the viewport while scrolling
 live link: https://khatiainanashvili.github.io/Thirty-Something-days-Thirty-Something-Projects/animated-scroll/
    project2 "animated-scroll"
               This project creates a grid of animated boxes.
