@@ -93,7 +93,7 @@
     - Live link: [stiky-navbar](https://khatiainanashvili.github.io/Thirty-Something-days-Thirty-Something-Projects/stiky-navbar/)
 
 31. **Project: "testemonial"**
-    - Live link: [testemonial](https://khatiainanashvili.github.io/Thirty-Something-days-Thirty-Something-Projects/testemonial
+    - Live link: [testemonial](https://khatiainanashvili.github.io/Thirty-Something-days-Thirty-Something-Projects/testemonial)
 32. **Project: "userFilter"**
     - Live link: [userFilter](https://khatiainanashvili.github.io/Thirty-Something-days-Thirty-Something-Projects/userFilter/)
 
