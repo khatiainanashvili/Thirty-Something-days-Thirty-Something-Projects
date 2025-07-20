@@ -1,38 +1,47 @@
-const toggles =document.querySelectorAll('.toggle')
-const good = document.getElementById('good')
-const cheap = document.getElementById('cheap')
-const fast = document.getElementById('fast')
-const free = document.getElementById('free')
-toggles.forEach(toggle => toggle.addEventListener('change', (e) => toTheTrick(e.target)))
-function toTheTrick(theClickedOne) {
-    if(good.checked && cheap.checked && fast.checked && free.checked){
-        if(free === theClickedOne) {
-            cheap.checked = false
-            good.checked = false
-            fast.checked = false
-    
-        }
-    else if ((clicked === good || clicked === cheap || clicked === fast) && clicked.checked) {
-    
-    free.checked = false;
-}
-        
-        if(good === theClickedOne)  {
-            fast.checked = false
-            free.checked = false
-        }
+const toggles = document.querySelectorAll('.toggle');
+const good = document.getElementById('good');
+const cheap = document.getElementById('cheap');
+const fast = document.getElementById('fast');
+const free = document.getElementById('free');
 
-        if(cheap === theClickedOne) {
-            good.checked = false
-            free.checked = false
-        
-        }
+toggles.forEach(toggle =>
+  toggle.addEventListener('change', (e) => {
+    const clicked = e.target;
 
-        if(fast === theClickedOne) {
-            cheap.checked = false
-            free.checked = false
-    
-        }
-        
+   
+    if (clicked === free && free.checked) {
+      good.checked = false;
+      cheap.checked = false;
+      fast.checked = false;
+      return; 
     }
-}
+
+    
+    if ((clicked === good || clicked === cheap || clicked === fast) && clicked.checked) {
+      free.checked = false;
+    }
+
+    if (good.checked && cheap.checked && fast.checked && free.checked) {
+      if (free === clicked) {
+        cheap.checked = false;
+        good.checked = false;
+        fast.checked = false;
+      }
+
+      if (good === clicked) {
+        fast.checked = false;
+        free.checked = false;
+      }
+
+      if (cheap === clicked) {
+        good.checked = false;
+        free.checked = false;
+      }
+
+      if (fast === clicked) {
+        cheap.checked = false;
+        free.checked = false;
+      }
+    }
+  })
+);
