@@ -13,19 +13,19 @@ function toTheTrick(theClickedOne) {
             fast.checked = false
         }
         
-        else if(good === theClickedOne) {
+        if(good === theClickedOne) {
             fast.checked = false
             
             free.checked = false
         }
 
-        else if(cheap === theClickedOne) {
+        if(cheap === theClickedOne) {
             good.checked = false
             
             free.checked = false
         }
 
-        else if(fast === theClickedOne) {
+        if(fast === theClickedOne) {
             cheap.checked = false
             
             free.checked = false
