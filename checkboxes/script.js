@@ -15,14 +15,20 @@ function toTheTrick(theClickedOne) {
         
         else if(good === theClickedOne) {
             fast.checked = false
+            
+            free.checked=false
         }
 
         else if(cheap === theClickedOne) {
             good.checked = false
+            
+            free.checked=false
         }
 
         else if(fast === theClickedOne) {
             cheap.checked = false
+            
+            free.checked=false
         }
         
     }
