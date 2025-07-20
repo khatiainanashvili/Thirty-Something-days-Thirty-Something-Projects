@@ -6,7 +6,7 @@ const free = document.getElementById('free')
 toggles.forEach(toggle => toggle.addEventListener('change', (e) => toTheTrick(e.target)))
 
 function toTheTrick(theClickedOne) {
-    if(good.checked && cheap.checked && fast.checked){
+    if(good.checked && cheap.checked && fast.checked && free.checked){
         if (free === theClickedOne) {
             cheap.checked = false
             good.checked = false
