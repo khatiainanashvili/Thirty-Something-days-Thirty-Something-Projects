@@ -28,17 +28,17 @@ toggles.forEach(toggle =>
         fast.checked = false;
       }
 
-      if (good === clicked) {
+      if (good === theClickedOne) {
         fast.checked = false;
         free.checked = false;
       }
 
-      if (cheap === clicked) {
+      if (cheap === theClickedOne) {
         good.checked = false;
         free.checked = false;
       }
 
-      if (fast === clicked) {
+      if (fast === theClickedOne) {
         cheap.checked = false;
         free.checked = false;
       }
