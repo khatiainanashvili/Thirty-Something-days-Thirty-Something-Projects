@@ -18,7 +18,7 @@ function toTheTrick(theClickedOne) {
         if (fast === theClickedOne) {
             cheap.checked = false
         }
-           if (free === theClickedOne) {
+        if (free === theClickedOne) {
             cheap.checked = false
             good.checked = false
             fast.checked = false
