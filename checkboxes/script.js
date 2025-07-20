@@ -8,41 +8,31 @@ toggles.forEach(toggle =>
   toggle.addEventListener('change', (e) => {
     const theClickedOne = e.target;
 
-     first
+ 
     if (theClickedOne === free && free.checked) {
-      // Free turned on: disable all others immediately
       good.checked = false;
       cheap.checked = false;
       fast.checked = false;
-      return; // Done
+      return; 
     }
 
-    
-    if ((theClickedOne === good || theClickedOne === cheap || theClickedOne === fast) && theClickedOne.checked) {
+  
+    if (free.checked && (theClickedOne === good || theClickedOne === cheap || theClickedOne === fast)) {
       free.checked = false;
     }
 
-    // Now, apply your original 4-toggle interaction logic:
-    if (good.checked && cheap.checked && fast.checked && free.checked) {
-      if (free === theClickedOne) {
-        cheap.checked = false;
-        good.checked = false;
+  
+    if (good.checked && cheap.checked && fast.checked) {
+      if (theClickedOne === good) {
         fast.checked = false;
       }
 
-      if (good === theClickedOne) {
-        fast.checked = false;
-        free.checked = false;
-      }
-
-      if (cheap === theClickedOne) {
+      if (theClickedOne === cheap) {
         good.checked = false;
-        free.checked = false;
       }
 
-      if (fast === theClickedOne) {
+      if (theClickedOne === fast) {
         cheap.checked = false;
-        free.checked = false;
       }
     }
   })
