@@ -4,13 +4,11 @@ const cheap = document.getElementById('cheap')
 const fast = document.getElementById('fast')
 const free = document.getElementById('free')
 toggles.forEach(toggle => toggle.addEventListener('change', (e) => toTheTrick(e.target)))
-
 function toTheTrick(theClickedOne) {
     if(good.checked && cheap.checked && fast.checked && free.checked){
         if(free === theClickedOne) {
-            cheap.checked = false
-            good.checked = false
-            fast.checked = false
+            cheap.checked && good.checked && fast.checked = false
+    
         }
         
         if(good === theClickedOne || free === theClickedOne)  {
