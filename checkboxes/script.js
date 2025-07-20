@@ -7,20 +7,22 @@ toggles.forEach(toggle => toggle.addEventListener('change', (e) => toTheTrick(e.
 function toTheTrick(theClickedOne) {
     if(good.checked && cheap.checked && fast.checked && free.checked){
         if(free === theClickedOne) {
-            cheap.checked && good.checked && fast.checked = false
+            cheap.checked = false
+            good.checked = false
+            fast.checked = false
     
         }
         
-        if(good === theClickedOne || free === theClickedOne)  {
+        if(good === theClickedOne)  {
             fast.checked = false
         }
 
-        if(cheap === theClickedOne || free === theClickedOne) {
+        if(cheap === theClickedOne) {
             good.checked = false
         
         }
 
-        if(fast === theClickedOne || free === theClickedOne) {
+        if(fast === theClickedOne) {
             cheap.checked = false
     
         }
